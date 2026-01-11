@@ -1,0 +1,25 @@
+# Rust build artifacts
+target/
+Cargo.lock
+
+# Tree-sitter build artifacts (keep src/ for Zed)
+grammars/baboon/node_modules/
+grammars/baboon/*.so
+grammars/baboon/*.dylib
+grammars/baboon/*.dll
+grammars/baboon/build/
+grammars/baboon/bindings/
+
+# Nix
+result
+.direnv/
+
+# Editor
+.idea/
+.vscode/
+*.swp
+*~
+
+# OS
+.DS_Store
+Thumbs.db
