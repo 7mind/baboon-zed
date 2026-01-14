@@ -38,11 +38,13 @@ impl zed::Extension for BaboonExtension {
         };
 
         // Get environment variables if configured
-        let env = lsp_settings
+        let env: Vec<(String, String)> = lsp_settings
             .binary
             .as_ref()
             .and_then(|b| b.env.clone())
-            .unwrap_or_default();
+            .unwrap_or_default()
+            .into_iter()
+            .collect();
 
         Ok(Command {
             command: binary_path,
