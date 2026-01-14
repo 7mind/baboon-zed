@@ -1,0 +1,3 @@
+[submodule "grammars/baboon"]
+	path = grammars/baboon
+	url = https://github.com/7mind/baboon-zed-grammar.git
