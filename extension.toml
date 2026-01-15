@@ -11,5 +11,5 @@ name = "Baboon LSP"
 languages = ["Baboon"]
 
 [grammars.baboon]
-repository = "https://github.com/7mind/baboon-zed-grammar"
+repository = "https://github.com/7mind/baboon-zed-grammar.git"
 rev = "main"
