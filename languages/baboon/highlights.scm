@@ -14,6 +14,7 @@
 ; Header keywords
 "model" @keyword
 "version" @keyword
+"pragma" @keyword
 "include" @keyword
 "import" @keyword
 "without" @keyword
