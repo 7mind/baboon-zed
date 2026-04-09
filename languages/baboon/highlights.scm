@@ -37,6 +37,7 @@
 "def" @keyword
 "is" @keyword
 "with" @keyword
+"type" @keyword
 
 ; Method markers
 "in" @keyword
@@ -86,6 +87,9 @@
 (namespace_def
   name: (identifier) @namespace)
 
+(type_alias_def
+  name: (identifier) @type.definition)
+
 ; Enum members
 (enum_member
   name: (identifier) @constant)
@@ -97,6 +101,14 @@
 ; Field definitions
 (field_def
   name: (identifier) @property)
+
+; Field renames
+(field_rename
+  previous: (identifier) @property)
+
+; Enum member renames
+(enum_member_rename
+  previous: (identifier) @constant)
 
 ; Type references
 (scoped_identifier) @type

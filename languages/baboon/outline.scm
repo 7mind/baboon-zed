@@ -26,6 +26,10 @@
 (namespace_def
   name: (identifier) @name) @item
 
+; Type aliases
+(type_alias_def
+  name: (identifier) @name) @item
+
 ; Methods
 (method_def
   name: (identifier) @name) @item
