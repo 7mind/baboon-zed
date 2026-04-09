@@ -12,4 +12,4 @@ languages = ["Baboon"]
 
 [grammars.baboon]
 repository = "https://github.com/7mind/baboon-zed-grammar.git"
-rev = "main"
+rev = "9400c523a710ef67a2396c7d57375cfe33bbb526"
