@@ -38,6 +38,8 @@
 "is" @keyword
 "with" @keyword
 "type" @keyword
+"keep" @keyword
+"drop" @keyword
 
 ; Method markers
 "in" @keyword
